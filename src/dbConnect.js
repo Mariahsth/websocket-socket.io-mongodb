@@ -1,6 +1,6 @@
 import { MongoClient } from "mongodb";
 
-const cliente= new MongoClient('mongodb+srv://admin:admin123@cluster1.rw4pc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1');
+const cliente= new MongoClient('STRING DE CONEXÃO');
 
 let documentosColecao;
 
