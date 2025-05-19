@@ -1,7 +1,8 @@
 import jwt from "jsonwebtoken";
 
 function gerarJwt(payload){
-    const tokenJwt= jwt.sign(payload, process.env.SEGREDO_JWT, {
+    const secret = process.env.JWT_SECRET || 'fallback-local-secret';
+    const tokenJwt= jwt.sign(payload, secret, {
         expiresIn: "1h"
     });
 
