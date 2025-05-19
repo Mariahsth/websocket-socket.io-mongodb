@@ -1,5 +1,6 @@
 import { inserirLinkDocumento, removerLinkDocumento } from "./index.js";
 import { obterCookie } from "./utils/cookies.js";
+import io from "../../src/servidor.js";
 
 const socket = io("/usuarios", {
   auth: {
